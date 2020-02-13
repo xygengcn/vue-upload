@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       data: [],
-      progress: ""
+      progress: 0
     };
   },
   computed: {
@@ -42,6 +42,9 @@ export default {
         this.$emit("getData", newVal, oldVal);
       },
       immediate: true
+    },
+    progress:{
+
     }
   },
   methods: {
